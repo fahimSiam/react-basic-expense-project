@@ -30,7 +30,7 @@ const ExpenseForm = (props) => {
       amount: userInput.enteredAmount,
       date: new Date(userInput.enteredDate),
     };
-    props.onSaveExpenseData(expenseData);
+    props.onSaveExpenseData(expenseData); //moving data to parent component NewExpense
     setUserInput({
       enteredTitle: "",
       enteredAmount: "",
